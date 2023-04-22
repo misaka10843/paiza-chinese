@@ -24,7 +24,7 @@ document.head.appendChild(style);
 
     // 读取JSON文件
 var xhr = new XMLHttpRequest();
-xhr.open("GET", "http://127.0.0.1/2.json?v=0.00011", true);
+xhr.open("GET", "https://api.sakurakoi.top/assets/paiza-chinese/zh.json?v=0.00011", true);
 xhr.onreadystatechange = function() {
   if (xhr.readyState === 4 && xhr.status === 200) {
     var data = JSON.parse(xhr.responseText);
